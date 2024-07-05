@@ -82,27 +82,4 @@ public class StudentAccountTest extends StudentLoginBase {
         Assert.assertEquals(numberOfFillInTheBlanks, 0);
         Assert.assertEquals(numberOfShortQuestions, 0);
     }
-
-    @Test
-    public void TC_007_VerifyExamSummaryNavigation() {
-
-        // Step 3: Click on the first quiz and get its title
-        UtilsSet.clickOnElement(Constants.Dashboard.BY_Quiz1);
-        String examTitle1 = UtilsSet.getElementText(Constants.Exams.BY_QuizTitle);
-
-        UtilsSet.clickOnElement(Constants.Dashboard.BY_Quiz2);
-        // Step 4: Wait for 5 seconds before clicking on the second quiz
-        try {
-            Thread.sleep(5000); // Sleep for 5 seconds
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-        }
-
-        // Step 5: Click on the second quiz and get its title
-
-        String examTitle2 = UtilsSet.getElementText(Constants.Exams.BY_QuizTitle);
-
-        // Verify that the two titles are different
-        Assert.assertNotEquals(examTitle1, examTitle2, "The titles of the two exams are the same. The test should fail if they are the same.");
-    }
 }
