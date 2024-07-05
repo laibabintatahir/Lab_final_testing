@@ -19,7 +19,7 @@ public class StudentAccountTest extends StudentLoginBase {
     }
 
     @Test
-    public void TC_001_VerifyExamDetailsDisplay() {
+    public void VerifyExamDetailsDisplay() {
         // Preconditions: User is logged in and on the Dashboard
 //        UtilsSet.goToUrl("https://demo.subexpert.com/dashboard");
 
@@ -45,7 +45,7 @@ public class StudentAccountTest extends StudentLoginBase {
     }
 
     @Test
-    public void TC_003_VerifyQuestionTypesAndMarksDistribution() {
+    public void VerifyQuestionTypesAndMarksDistribution() {
         // Preconditions: User is logged in and on the Exam Summary page
 //        UtilsSet.goToUrl("https://demo.subexpert.com/exam-summary");
 
