@@ -23,13 +23,13 @@ public class StudentAccountTest extends StudentLoginBase {
         // Preconditions: User is logged in and on the Dashboard
 //        UtilsSet.goToUrl("https://demo.subexpert.com/dashboard");
 
-        // Step 1: Navigate to the Dashboard
+        //  1: Dashboard
         UtilsSet.clickOnElement(Constants.Dashboard.BY_ThreeDots);
 
-        // Step 2: Click on the Exams button
+        //  2: Exams button
         UtilsSet.clickOnElement(Constants.Dashboard.BY_ExamsButton);
 
-        // Step 3: Verify the display of exam details: title, duration, examiner, course, start time
+        //  3: Verify the display of exam details: title, duration, examiner, course, start time
         String actualTitle = UtilsSet.getElementText(Constants.Exams.BY_ExamTitle);
         String actualDuration = UtilsSet.getElementText(Constants.Exams.BY_ExamDuration);
         String actualExaminer = UtilsSet.getElementText(Constants.Exams.BY_Examiner);
@@ -49,7 +49,7 @@ public class StudentAccountTest extends StudentLoginBase {
         // Preconditions: User is logged in and on the Exam Summary page
 //        UtilsSet.goToUrl("https://demo.subexpert.com/exam-summary");
 
-        // Step 2: Click on the Exams button
+        //  2: Click on the Exams button
         UtilsSet.clickOnElement(Constants.Dashboard.BY_Quiz1);
 
         // Get the number of questions for each type
